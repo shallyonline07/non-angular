@@ -1,0 +1,49 @@
+<html>
+
+<head>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+    <script>
+        function multiplyNum() {
+            console.log(document.getElementById("txtNum1").value);
+            console.log(document.getElementById("txtNum2").value);
+            var num1 = document.getElementById("txtNum1").value 
+            var num2 = document.getElementById("txtNum2").value;
+
+            document.getElementById("lblResult").innerHTML = num1* num2;
+
+        }
+        function divideNum() {
+            console.log(document.getElementById("txtNum1").value);
+            console.log(document.getElementById("txtNum2").value);
+            var num1 = document.getElementById("txtNum1").value 
+            var num2 = document.getElementById("txtNum2").value;
+
+            document.getElementById("lblResult").innerHTML = num1/ num2;
+        }
+    </script>
+</head>
+
+<body>
+
+
+    <div class="container">
+        <h1> Math Probelm</h1>
+        <div class="form-group w-25">
+            <label for="txtNum1">Number 1:</label>
+            <input type="text" id="txtNum1" class="form-control" name="number1" placeholder="enter the value">
+        </div>
+        <div class="form-group w-25">
+            <label for="txtNum2">Number 2:</label>
+            <input type="text" id="txtNum2" class="form-control" name="number2" placeholder="enter the value">
+        </div><br>
+        <button onclick="multiplyNum()">Multiply</button>
+        <button onclick="divideNum()">Divide</button><br>
+
+        <label>The result is:</label>
+        <label id="lblResult"></label>
+
+    </div>
+</body>
+
+</html>

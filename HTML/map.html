@@ -1,0 +1,14 @@
+<html>
+<body>
+<p> Map function of an array</p>
+<p id ="demo"></p>
+<script>
+    var number1 =[2,4,6,8];
+    var number2 = number1.map(myfunction); 
+    document.getElementById("demo").innerHTML = number2;
+    function myfunction(value, index, array) {
+        return  value * 2;
+    }
+</script>
+</body>
+</html>

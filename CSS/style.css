@@ -1,0 +1,20 @@
+h1 {
+  color: blue;
+  color: pink;
+}
+#b {
+  color: red;
+}
+.alignment {
+  padding-left: 100px;
+}
+
+.light-table {
+  border-width: 1px;
+  border-style: solid;
+  border-color: black
+}
+
+.table {
+  max-width: 50%;
+}

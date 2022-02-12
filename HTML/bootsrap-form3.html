@@ -1,0 +1,50 @@
+<html>
+
+<head>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+
+    <script>
+        function reviewEnteredVlaues() {
+            console.log(document.getElementById("txtEmail").value);
+            console.log(document.getElementById("txtMobile").Value);
+            var emailValue = document.getElementById("txtEmail").value;
+            var mobileValue = document.getElementById("txtMobile").value;
+            document.getElementById("lblEmail").innerHTML = emailValue;
+            document.getElementById("lblMobile").innerHTML = mobileValue;
+        }
+        function submitForm() {
+            document.getElementById("success").innerHTML = "form has been successful";
+        }
+    </script>
+</head>
+
+<body>
+    <div class="container">
+        <h1> bootstrap form 3</h1>
+        <p id="success" class="text-primary"></p>
+        <div class="form-group w-25">
+            <label for="txtEmail">Email:</label>
+            <input type="text" class="form-control" id="txtEmail" name="email" placeholder="enter value">
+        </div>
+        <div class="form-group w-25">
+            <label for="txtMobile">Mobile:</label>
+            <input type="text" class="form-control" id="txtMobile" name="mobile" placeholder="enter value">
+
+        </div>
+        <button onclick="reviewEnteredVlaues()">Next</button>
+    </div>
+    <div>
+        <h3>Review Detail</h3>
+        <label>Email:</label>
+        <label id="lblEmail"></label>
+        <label>Mobile:</label>
+        <label id="lblMobile"></label>
+    </div>
+    <div>
+        <button onclick="submitForm()">Submit</button>
+    </div>
+    </div>
+</body>
+
+</html>

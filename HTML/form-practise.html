@@ -1,0 +1,48 @@
+<html>
+
+<head>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+</head>
+
+<body>
+
+    <div class="container">
+        <h1>Bootstrap</h1>
+        <div class="form-group  w-25">
+            <label id="lblEmail" for="txtEmail">Email:</label>
+            <input type="text" class="form-control" id="txtEmail" name="email" placeholder="enter the value">
+
+        </div>
+        <div class="form-group w-25">
+            <label id="lblMobile" for="txtMobile">Mobile:</label>
+            <input type="text" class="form-control" name="Mobile" id="txtMobile" placeholder="enter the value">
+
+        </div>
+        <button onclick="displayText()">Next</button>
+        <h2>Review Detail:</h2>
+        <label>Email:</label>
+
+        <label id="displayEmail"></label><br>
+        <label>Mobile:</label>
+        <label id="displayMobile"></label>
+        <script>
+            function displayText() {
+                var x = getEmailValue();
+                var y = document.getElementById("txtMobile").value;
+                console.log(document.getElementById("lblEmail"));
+
+                document.getElementById("displayEmail").innerHTML = x;
+                document.getElementById("displayMobile").innerHTML = y;
+
+                
+            }
+
+            function getEmailValue() {
+                return document.getElementById("txtEmail").value;
+            }
+        </script>
+    </div>
+</body>
+
+</html>

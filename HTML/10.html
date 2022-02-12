@@ -1,0 +1,27 @@
+<html>
+<body>
+<h1>print</h1>
+<button onclick="printValueOnConsole()">Print 10</button>
+
+<!-- <p id="demo"></p> -->
+<script>
+     var sum = " "
+function printValue() {
+    for(var i=1;i<=10;i++) {
+     sum =  sum + "<br>" + i;
+    }
+    console.log("inside printValue() function");
+    return sum;
+//   document.getElementById("demo").innerHTML= sum;
+// console.log(sum);
+}
+
+function printValueOnConsole() {
+    var value = printValue();
+    console.log("inside printValueOnConsole() function");
+    console.log(value);
+}
+
+     </script>
+     </body>
+     </html>

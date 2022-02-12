@@ -1,0 +1,16 @@
+h1  {
+color: red;
+}
+#a  {
+    color:red;
+}
+.alignment  {
+    padding-Left: 50px;
+}
+p  {
+border-style:dotted;
+border-color:red;
+border-width:thick;
+font-size: 30px;
+color: green;
+}

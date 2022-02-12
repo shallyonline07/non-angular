@@ -1,0 +1,49 @@
+h1 {
+ color:red;
+} 
+ /* .alignment { */ */
+  /* padding: 0px 20px 0px 20px; */
+  /* border: solid green; */
+  /* margin: 20px; */
+/* } */
+
+/* 
+Bootstrap margin(m) / padding(p)
+0 -> 0px
+1 -> 4px
+2 -> 8px
+3 -> 16px  (1 rem)
+4 -> 24px
+5 -> 48px
+
+=== css units: ===
+px
+em
+rem
+vh
+vw
+
+
+
+pt-0  0 to 5
+pr-0
+pb
+pl
+
+
+
+*/
+
+
+
+/* .custom-table { */
+  border-color: red;
+}
+
+/* .alignment { */
+  padding: 10px;
+}
+
+/* .alignment { */
+  border: solid green;
+}

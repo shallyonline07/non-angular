@@ -1,0 +1,67 @@
+<html>
+
+<head>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+
+    <script>
+        var Num1, Num2;
+        function retrieveOperandValues() {
+            // console.log(document.getElementById("txtNum1").value);
+            // console.log(document.getElementById("txtNum2").value);
+            Num1 = document.getElementById("txtNum1").value;
+            Num2 = document.getElementById("txtNum2").value;
+            console.log(Num1);
+            console.log(Num2)
+        }
+        function mulNum() {
+            
+            retrieveOperandValues();
+
+            document.getElementById("lblResult").innerHTML = Num1 * Num2;
+        }
+
+        function divNum() {
+            retrieveOperandValues();
+            document.getElementById("lblResult").innerHTML = Num1 / Num2;
+        }
+        function addNum() {
+            retrieveOperandValues();
+            document.getElementById("lblResult").innerHTML = parseInt(Num1) + parseInt(Num2);
+        }
+
+        function subNum() {
+
+            retrieveOperandValues();
+
+            document.getElementById("lblResult").innerHTML = Num1 - Num2;
+        }
+
+    </script>
+</head>
+
+<body>
+    <div class="container">
+        <h1>Calculator</h1>
+        <div class="form-group w-25">
+            <label for="txtNum1">Number1:</label>
+            <input type="text" class="form-control" id="txtNum1" name="number1" placeholder="enter the value">
+        </div>
+        <div class="form-group w-25">
+            <label for="txtNum2">Number2:</label>
+            <input type="text" class="form-control" id="txtNum2" name="number2" placeholder="enter the value">
+        </div><br>
+        <button class="btn btn-primary" onclick="mulNum()">Multiply</button>
+        <button class="btn btn-secondary" onclick="divNum()">Divide</button>
+        <button class="btn btn-success" onclick="addNum()">Add</button>
+        <button class="btn btn-danger" onclick="subNum()">Subtract</button><br>
+        <label>Result:</label>
+        <label id="lblResult"></label>
+
+
+
+    </div>
+
+</body>
+
+</html>

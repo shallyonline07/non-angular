@@ -1,0 +1,19 @@
+
+    table,th,td  {
+      border-color: red;
+      border: solid;
+      border-collapse: collapse;
+    
+     }
+       th,td {
+          padding: 10px;
+          }
+
+    th {
+  text-align: center;
+    }
+    table {
+      border-color: red;
+    }
+          
+     
